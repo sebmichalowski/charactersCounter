@@ -1,3 +1,4 @@
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class CharactersCounter {
@@ -37,6 +38,11 @@ public class CharactersCounter {
     }
 
     private int countOccurrences(Pattern pattern){
+        Matcher matcher = pattern.matcher(this.inputString);
+        int count = 0;
+        while (matcher.find()){
+            count++;
+        }
         return 0;
     }
 }
