@@ -43,6 +43,6 @@ public class CharactersCounter {
         while (matcher.find()){
             count++;
         }
-        return 0;
+        return count;
     }
 }
